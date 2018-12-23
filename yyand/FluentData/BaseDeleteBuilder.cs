@@ -1,0 +1,37 @@
+using System.Runtime.CompilerServices;
+
+namespace FluentData
+{
+	internal abstract class BaseDeleteBuilder
+	{
+		[CompilerGenerated]
+		private BuilderData builderData_0;
+
+		[CompilerGenerated]
+		private ActionsHandler actionsHandler_0;
+
+		public BuilderData Data
+		{
+			get;
+			set;
+		}
+
+		protected ActionsHandler Actions
+		{
+			get;
+			set;
+		}
+
+		public BaseDeleteBuilder(IDbCommand command, string name)
+		{
+			Data = new BuilderData(command, name);
+			Actions = new ActionsHandler(Data);
+		}
+
+		public int Execute()
+		{
+			Data.Command.Sql(Data.Command.Data.Context.Data.FluentDataProvider.GetSqlForDeleteBuilder(Data));
+			return Data.Command.Execute();
+		}
+	}
+}

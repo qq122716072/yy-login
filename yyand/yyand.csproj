@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E55000ED-91FD-4773-93E6-FBE8E759EFBA}</ProjectGuid>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>yyand-12-1</AssemblyName>
+    <RootNamespace>yyAuto</RootNamespace>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>..\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>战火协议.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class14.cs" />
+    <Compile Include="Class18.cs" />
+    <Compile Include="FluentData\AccessProvider.cs" />
+    <Compile Include="FluentData\ActionsHandler.cs" />
+    <Compile Include="FluentData\AutoMapper.cs" />
+    <Compile Include="FluentData\BaseDeleteBuilder.cs" />
+    <Compile Include="FluentData\BaseInsertBuilder.cs" />
+    <Compile Include="FluentData\BaseStoredProcedureBuilder.cs" />
+    <Compile Include="FluentData\BaseUpdateBuilder.cs" />
+    <Compile Include="FluentData\BuilderColumn.cs" />
+    <Compile Include="FluentData\BuilderData.cs" />
+    <Compile Include="FluentData\CommandEventArgs.cs" />
+    <Compile Include="FluentData\ConnectionEventArgs.cs" />
+    <Compile Include="FluentData\DataReader.cs" />
+    <Compile Include="FluentData\DataReaderField.cs" />
+    <Compile Include="FluentData\DataReaderHelper.cs" />
+    <Compile Include="FluentData\DataTypes.cs" />
+    <Compile Include="FluentData\DB2Provider.cs" />
+    <Compile Include="FluentData\DbCommand.cs" />
+    <Compile Include="FluentData\DbCommandData.cs" />
+    <Compile Include="FluentData\DbCommandTypes.cs" />
+    <Compile Include="FluentData\DbContext.cs" />
+    <Compile Include="FluentData\DbContextData.cs" />
+    <Compile Include="FluentData\DeleteBuilder.cs" />
+    <Compile Include="FluentData\DynamicDataReader.cs" />
+    <Compile Include="FluentData\DynamicTypeAutoMapper.cs" />
+    <Compile Include="FluentData\EntityFactory.cs" />
+    <Compile Include="FluentData\ErrorEventArgs.cs" />
+    <Compile Include="FluentData\ExecuteQueryHandler.cs" />
+    <Compile Include="FluentData\FluentDataException.cs" />
+    <Compile Include="FluentData\GInterface0.cs" />
+    <Compile Include="FluentData\GInterface1.cs" />
+    <Compile Include="FluentData\GInterface2.cs" />
+    <Compile Include="FluentData\IDataReader.cs" />
+    <Compile Include="FluentData\IDbCommand.cs" />
+    <Compile Include="FluentData\IDbContext.cs" />
+    <Compile Include="FluentData\IDbProvider.cs" />
+    <Compile Include="FluentData\IDeleteBuilder.cs" />
+    <Compile Include="FluentData\IEntityFactory.cs" />
+    <Compile Include="FluentData\IExecute.cs" />
+    <Compile Include="FluentData\IInsertBuilder.cs" />
+    <Compile Include="FluentData\IInsertBuilderDynamic.cs" />
+    <Compile Include="FluentData\IInsertUpdateBuilderDynamic.cs" />
+    <Compile Include="FluentData\InsertBuilder.cs" />
+    <Compile Include="FluentData\InsertBuilderDynamic.cs" />
+    <Compile Include="FluentData\IParameterValue.cs" />
+    <Compile Include="FluentData\IQuery.cs" />
+    <Compile Include="FluentData\IQueryTypeHandler.cs" />
+    <Compile Include="FluentData\ISelectBuilder.cs" />
+    <Compile Include="FluentData\IsolationLevel.cs" />
+    <Compile Include="FluentData\IStoredProcedureBuilder.cs" />
+    <Compile Include="FluentData\IStoredProcedureBuilderDynamic.cs" />
+    <Compile Include="FluentData\IUpdateBuilder.cs" />
+    <Compile Include="FluentData\IUpdateBuilderDynamic.cs" />
+    <Compile Include="FluentData\MySqlProvider.cs" />
+    <Compile Include="FluentData\OracleProvider.cs" />
+    <Compile Include="FluentData\ParameterDirection.cs" />
+    <Compile Include="FluentData\PostgreSqlProvider.cs" />
+    <Compile Include="FluentData\PropertyExpressionParser.cs" />
+    <Compile Include="FluentData\Providers\Common\Builders\DeleteBuilderSqlGenerator.cs" />
+    <Compile Include="FluentData\Providers\Common\Builders\InsertBuilderSqlGenerator.cs" />
+    <Compile Include="FluentData\Providers\Common\Builders\UpdateBuilderSqlGenerator.cs" />
+    <Compile Include="FluentData\Providers\Common\ConnectionFactory.cs" />
+    <Compile Include="FluentData\Providers\Common\DbTypeMapper.cs" />
+    <Compile Include="FluentData\QueryCustomEntityHandler.cs" />
+    <Compile Include="FluentData\QueryDataTableHandler.cs" />
+    <Compile Include="FluentData\QueryDynamicHandler.cs" />
+    <Compile Include="FluentData\QueryHandler.cs" />
+    <Compile Include="FluentData\QueryScalarHandler.cs" />
+    <Compile Include="FluentData\ReflectionHelper.cs" />
+    <Compile Include="FluentData\SelectBuilder.cs" />
+    <Compile Include="FluentData\SelectBuilderData.cs" />
+    <Compile Include="FluentData\SqlAzureProvider.cs" />
+    <Compile Include="FluentData\SqliteProvider.cs" />
+    <Compile Include="FluentData\SqlServerCompactProvider.cs" />
+    <Compile Include="FluentData\SqlServerProvider.cs" />
+    <Compile Include="FluentData\StoredProcedureBuilder.cs" />
+    <Compile Include="FluentData\StoredProcedureBuilderDynamic.cs" />
+    <Compile Include="FluentData\UpdateBuilder.cs" />
+    <Compile Include="FluentData\UpdateBuilderDynamic.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSScriptControl\DScriptControlSource_Event.cs" />
+    <Compile Include="MSScriptControl\GInterface6.cs" />
+    <Compile Include="MSScriptControl\IScriptControl.cs" />
+    <Compile Include="MSScriptControl\ScriptControl.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\Authentication\AuthMethod.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\Authentication\AuthNone.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\Authentication\AuthUserPass.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\HandShakeComplete.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\HttpsHandler.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\IAsyncProxyResult.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\ProxyException.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\ProxySocket.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\ProxyTypes.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\Socks4Handler.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\Socks5Handler.cs" />
+    <Compile Include="Org\Mentalis\Network\ProxySocket\SocksHandler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="yyand\Common\ByteArray.cs" />
+    <Compile Include="yyand\Common\bytetool.cs" />
+    <Compile Include="yyand\Common\c_Data.cs" />
+    <Compile Include="yyand\Common\Endian.cs" />
+    <Compile Include="yyand\Common\HardwareInfo.cs" />
+    <Compile Include="yyand\Common\imagetool.cs" />
+    <Compile Include="yyand\Common\jstool.cs" />
+    <Compile Include="yyand\Common\krbtool.cs" />
+    <Compile Include="yyand\Common\loghelper.cs" />
+    <Compile Include="yyand\Common\logobj.cs" />
+    <Compile Include="yyand\Common\logtool.cs" />
+    <Compile Include="yyand\Common\MyEncrypt.cs" />
+    <Compile Include="yyand\Common\MyEncryptMacCode.cs" />
+    <Compile Include="yyand\Common\rdomhelper.cs" />
+    <Compile Include="yyand\Common\rsautil.cs" />
+    <Compile Include="yyand\Common\savepcbuser.cs" />
+    <Compile Include="yyand\Common\savewebuser.cs" />
+    <Compile Include="yyand\Common\sha1.cs" />
+    <Compile Include="yyand\Common\timetool.cs" />
+    <Compile Include="yyand\Common\xxtea2.cs" />
+    <Compile Include="yyand\Model\ARC4.cs" />
+    <Compile Include="yyand\Model\AuthInfo.cs" />
+    <Compile Include="yyand\Model\authrequest.cs" />
+    <Compile Include="yyand\Model\checkinfo.cs" />
+    <Compile Include="yyand\Model\c_Data.cs" />
+    <Compile Include="yyand\Model\DBContext.cs" />
+    <Compile Include="yyand\Model\duoip.cs" />
+    <Compile Include="yyand\Model\initip.cs" />
+    <Compile Include="yyand\Model\InitTcp.cs" />
+    <Compile Include="yyand\Model\IOCPClient.cs" />
+    <Compile Include="yyand\Model\loginret.cs" />
+    <Compile Include="yyand\Model\msgbyte.cs" />
+    <Compile Include="yyand\Model\myip.cs" />
+    <Compile Include="yyand\Model\MySocketEventArgs.cs" />
+    <Compile Include="yyand\Model\MyTcp.cs" />
+    <Compile Include="yyand\Model\MyTcp1225.cs" />
+    <Compile Include="yyand\Model\MyUser.cs" />
+    <Compile Include="yyand\Model\MyUser1222.cs" />
+    <Compile Include="yyand\Model\MyUser1225.cs" />
+    <Compile Include="yyand\Model\MyUserShow.cs" />
+    <Compile Include="yyand\Model\OldTcp.cs" />
+    <Compile Include="yyand\Model\pcuserinit.cs" />
+    <Compile Include="yyand\Model\prorequest.cs" />
+    <Compile Include="yyand\Model\ProxyInfo.cs" />
+    <Compile Include="yyand\Model\sendrequest.cs" />
+    <Compile Include="yyand\Model\TcpClientEx.cs" />
+    <Compile Include="yyand\Model\UserCache.cs" />
+    <Compile Include="yyand\Model\weblogin.cs" />
+    <Compile Include="yyand\Model\yongjiobj.cs" />
+    <Compile Include="yyand\Model\YYModel\APRouterBase.cs" />
+    <Compile Include="yyand\Model\YYModel\Binary64.cs" />
+    <Compile Include="yyand\Model\YYModel\CAPInfo.cs" />
+    <Compile Include="yyand\Model\YYModel\CAppUID.cs" />
+    <Compile Include="yyand\Model\YYModel\CClientInfo.cs" />
+    <Compile Include="yyand\Model\YYModel\CCompressionInfo.cs" />
+    <Compile Include="yyand\Model\YYModel\CExtentProp.cs" />
+    <Compile Include="yyand\Model\YYModel\ChannelQueueMar.cs" />
+    <Compile Include="yyand\Model\YYModel\CharAtExtention.cs" />
+    <Compile Include="yyand\Model\YYModel\CombAcctinfo.cs" />
+    <Compile Include="yyand\Model\YYModel\CRouteStackInfo.cs" />
+    <Compile Include="yyand\Model\YYModel\CRoutingKey.cs" />
+    <Compile Include="yyand\Model\YYModel\GClass1.cs" />
+    <Compile Include="yyand\Model\YYModel\GClass2.cs" />
+    <Compile Include="yyand\Model\YYModel\GClass3.cs" />
+    <Compile Include="yyand\Model\YYModel\GClass4.cs" />
+    <Compile Include="yyand\Model\YYModel\GClass5.cs" />
+    <Compile Include="yyand\Model\YYModel\GClass6.cs" />
+    <Compile Include="yyand\Model\YYModel\Hex.cs" />
+    <Compile Include="yyand\Model\YYModel\LoginAuthInfo.cs" />
+    <Compile Include="yyand\Model\YYModel\LoginData.cs" />
+    <Compile Include="yyand\Model\YYModel\MyBase64.cs" />
+    <Compile Include="yyand\Model\YYModel\MYHashMap.cs" />
+    <Compile Include="yyand\Model\YYModel\MyUInt64.cs" />
+    <Compile Include="yyand\Model\YYModel\PAPRouter.cs" />
+    <Compile Include="yyand\Model\YYModel\PAPRouterHdrBase.cs" />
+    <Compile Include="yyand\Model\YYModel\PAPRouterHeaders.cs" />
+    <Compile Include="yyand\Model\YYModel\PContextField1.cs" />
+    <Compile Include="yyand\Model\YYModel\PCS_APLogin.cs" />
+    <Compile Include="yyand\Model\YYModel\PCS_APLoginRes.cs" />
+    <Compile Include="yyand\Model\YYModel\PCS_APPing.cs" />
+    <Compile Include="yyand\Model\YYModel\PCS_CliAPLoginAuth2.cs" />
+    <Compile Include="yyand\Model\YYModel\PCS_CliAPLoginAuth2Res.cs" />
+    <Compile Include="yyand\Model\YYModel\PCS_GetAPInfo.cs" />
+    <Compile Include="yyand\Model\YYModel\PCS_GetAPInfoRes.cs" />
+    <Compile Include="yyand\Model\YYModel\PExchangeKey.cs" />
+    <Compile Include="yyand\Model\YYModel\PExchangeKeyExt.cs" />
+    <Compile Include="yyand\Model\YYModel\PGetMaixuListReq.cs" />
+    <Compile Include="yyand\Model\YYModel\PGetMaixuListRes.cs" />
+    <Compile Include="yyand\Model\YYModel\PJoinChannelReq.cs" />
+    <Compile Include="yyand\Model\YYModel\PJoinChannelRes.cs" />
+    <Compile Include="yyand\Model\YYModel\PJoinUserGroup.cs" />
+    <Compile Include="yyand\Model\YYModel\PLeaveChannelReq.cs" />
+    <Compile Include="yyand\Model\YYModel\PLeaveUserGroup.cs" />
+    <Compile Include="yyand\Model\YYModel\POnlineUser.cs" />
+    <Compile Include="yyand\Model\YYModel\POnUniCast.cs" />
+    <Compile Include="yyand\Model\YYModel\PQueryUserInfoReq.cs" />
+    <Compile Include="yyand\Model\YYModel\PQueryUserInfoRes.cs" />
+    <Compile Include="yyand\Model\YYModel\Properties.cs" />
+    <Compile Include="yyand\Model\YYModel\ProtoBase.cs" />
+    <Compile Include="yyand\Model\YYModel\ProtoBaseEx.cs" />
+    <Compile Include="yyand\Model\YYModel\ProtoPacket.cs" />
+    <Compile Include="yyand\Model\YYModel\PServiceUInfoExLoginReq.cs" />
+    <Compile Include="yyand\Model\YYModel\PServiceUInfoExModifyReq.cs" />
+    <Compile Include="yyand\Model\YYModel\PServiceUInfoReq.cs" />
+    <Compile Include="yyand\Model\YYModel\PServiceUInfoReq2.cs" />
+    <Compile Include="yyand\Model\YYModel\PUDBLoginAnonymousRes.cs" />
+    <Compile Include="yyand\Model\YYModel\RepUpdateUInfo.cs" />
+    <Compile Include="yyand\Model\YYModel\UDBYYLoginReq.cs" />
+    <Compile Include="yyand\Model\YYModel\UDBYYLoginRes.cs" />
+    <Compile Include="yyand\Model\YYModel\UserGroupIdType.cs" />
+    <Compile Include="yyand\Model\YYServers.cs" />
+    <Compile Include="yyand识别实现\Get51Code.cs" />
+    <Compile Include="yyand识别实现\ImageTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
