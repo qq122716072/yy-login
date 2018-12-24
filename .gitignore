@@ -1,0 +1,5 @@
+.git/
+.idea/
+.vs/
+Debug/PCache/*
+yyand/obj/*
